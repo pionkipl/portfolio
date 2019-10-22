@@ -1,0 +1,47 @@
+.heading {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.text {
+  font-size: 2rem;
+}
+
+.red {
+  color: red;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.typed-cursor {
+  font-size: 3rem;
+  color: red;
+}
+
+
+.section {
+  width: 20%;
+  float: left;
+  padding: 0 2rem;
+  min-height: 100vh;
+  position: relative;
+  padding-top: 5rem;
+}
+
+.width-long {
+  width: 500vw;
+}
+
+.list-btn {
+  list-style-type: none;
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  cursor: pointer;
+  button {
+    font-size: 2rem;
+  }
+}  

@@ -1,0 +1,28 @@
+.main {
+  &__person {
+    h2 {
+      font-size: 3.5rem;
+      font-weight: 300;
+      display: inline-block;
+      margin-right: 1rem;
+      margin-top: 2rem;
+    }
+    &-name {
+      font-size: 3.5rem;
+      font-weight: 700;
+      line-height: 1;
+    }
+  
+    &-profession {
+      margin-top: 3rem;
+    }
+
+    #typed {
+      font-size: 3rem;
+    }
+  }
+}
+
+.about {
+  background-color: $color-grey;
+}

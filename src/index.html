@@ -3,10 +3,154 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> <%= htmlWebpackPlugin.options.title %> </title>
+    <title>Jarosław Szczepaniak Developer</title>
     <meta name="viewport" content="width=device-width,initial- scale=1"> 
 </head>
 <body>
-  <h3>Welcome to Webpack 4 starter </h3>
-  <img id="webpack-gif" alt="webpack-gif">
+  <div class="width-long">
+    <section class="main section" id="first">
+      <div class="container">
+        <div class="row">
+          <div class="main__person">
+            <div class="main__person-name">Jar<span class="red">o</span>sław Szczepa<span class="red">n</span>iak</div>
+            <h2><span class="red bold">I</span> am a</h2>
+            <div class="main__person-profession">
+              <p>...</p>
+              <p>Program<span class="red">m</span>er</p>
+              <p>Tes<span class="red">t</span>er</p>
+              <p>Game De<span class="red">v</span></p>
+            </div>
+            <span id="typed"></span>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="main__me">
+            <img src="" alt="" class="img-me">
+          </div>
+        </div>
+        <div class="row">
+          <ul class="list-btn">
+            <li>
+              <a href="#second"><button class="btn btn-danger" data-scroll="#second">Next</button></a>
+            </li>
+          </ul>
+        </div>  
+      </div>
+    </section>
+      
+    <section class="about section" id="second">
+      <div class="container">
+        <div class="row">
+          <div class="about__container">
+              <h2 class="heading">About me</h2>
+            <p class="text">Hi, I'm Jarek Szczepaniak and I am a former dev tester.</p>
+            <p class="text">I completed postgraduate studies in speciality Front-end Developer 
+              at Collegium Da Vinci in Poznań.
+            </p>
+            <p class="text">I want to make awesome projects that can help other people. </p>
+          </div>
+        </div>
+        <div class="row">
+          <ul class="list-btn">
+            <li>    
+              <a href="#first"><button class="btn btn-danger mg-right-1" data-scroll="#first">Previous</button></a>
+              <a href="#third"><button class="btn btn-danger" data-scroll="#third">Next</button></a>
+            </li>
+          </ul>
+        </div>  
+      </div>
+    </section>
+      
+    <section class="skills section" id="third">
+      <div class="container">
+        <div class="row">
+          <div class="skills__container-text">
+            <h2 class="heading">Skills</h2>
+            <p class="text">I worked with</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="skills__container-skillset">
+            <div class="skill-container">
+              <div class="skill"></div>
+              <div class="skill-text"></div>
+            </div>
+            <div class="skill-container">
+              <div class="skill"></div>
+              <div class="skill-text"></div>
+            </div>
+            <div class="skill-container">
+              <div class="skill"></div>
+              <div class="skill-text"></div>
+            </div>
+            <div class="skill-container">
+              <div class="skill"></div>
+              <div class="skill-text"></div>
+            </div>
+            <div class="skill-container">
+              <div class="skill"></div>
+              <div class="skill-text"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <ul class="list-btn">
+            <li>
+              <a href="#second"><button class="btn btn-danger mg-right-1" data-scroll="#second">Previous</button></a>
+              <a href="#fourth"><button class="btn btn-danger" data-scroll="#fourth">Next</button></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+      
+    <section class="portfolio section" id="fourth">
+      <div class="container">
+        <div class="row">
+          <div class="portfolio__container">
+            <h2 class="heading">Portfolio</h2>
+            <div class="portfolio__container-example"></div>
+            <div class="portfolio__container-example"></div>
+            <div class="portfolio__container-example"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <ul class="list-btn">
+          <li>
+            <a href="#third"><button class="btn btn-danger mg-right-1" data-scroll="#third">Previous</button></a>
+            <a href="#fifth"><button class="btn btn-danger" data-scroll="#fifth">Next</button></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  
+    <section class="contact section" id="fifth">
+      <div class="row">
+        <div class="container">
+          <div class="contact__container">
+            <h2 class="heading">Contact</h2>
+            <p class="text">Text 1</p>
+            <div class="contact-button">Send message</div>
+            <div class="contact__container-social">
+              <div class="social-icon"></div>
+              <div class="social-icon"></div>
+              <div class="social-icon"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <ul class="list-btn">
+          <li>
+            <a href="#fourth"><button class="btn btn-danger mg-right-1" data-scroll="#fourth">Previous</button></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
 </html>

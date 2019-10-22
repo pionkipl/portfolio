@@ -34,5 +34,9 @@
     "webpack-cli": "^3.3.8",
     "webpack-dev-server": "^3.8.0",
     "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "bootstrap-scss": "^4.3.1",
+    "typed.js": "^2.0.11"
   }
 }
