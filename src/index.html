@@ -24,15 +24,19 @@
           </div>
         </div>
   
-        <div class="row">
+        <div class="row center">
           <div class="main__me">
-            <img src="" alt="" class="img-me">
+            <img src="./assets/images/me.png" alt="" class="img-me">
           </div>
         </div>
         <div class="row">
           <ul class="list-btn">
             <li>
-              <a href="#second"><button class="btn btn-danger" data-scroll="#second">Next</button></a>
+              <a href="#second">
+                <button class="button-oval button-next" data-scroll="#second">
+                  <img src="./assets/images/right-arrow.png" class="arrow">
+                </button>
+              </a>
             </li>
           </ul>
         </div>  
@@ -41,9 +45,9 @@
       
     <section class="about section" id="second">
       <div class="container">
-        <div class="row">
-          <div class="about__container">
-              <h2 class="heading">About me</h2>
+        <div class="row about__container">
+          <div class="about__container-text">
+            <h2 class="heading">About me</h2>
             <p class="text">Hi, I'm Jarek Szczepaniak and I am a former dev tester.</p>
             <p class="text">I completed postgraduate studies in speciality Front-end Developer 
               at Collegium Da Vinci in Poznań.
@@ -52,10 +56,19 @@
           </div>
         </div>
         <div class="row">
+          <div class="about__me">
+            <img src="./assets/images/me2.png" alt="" class="img-me">
+          </div>
+        </div>
+        <div class="row">
           <ul class="list-btn">
             <li>    
-              <a href="#first"><button class="btn btn-danger mg-right-1" data-scroll="#first">Previous</button></a>
-              <a href="#third"><button class="btn btn-danger" data-scroll="#third">Next</button></a>
+              <a href="#first"><button class="button-oval button-prev" data-scroll="#first">
+                <img src="./assets/images/left-arrow.png" class="arrow">
+              </button></a>
+              <a href="#third"><button class="button-oval button-next" data-scroll="#third">
+                <img src="./assets/images/right-arrow.png" class="arrow">
+              </button></a>
             </li>
           </ul>
         </div>  
@@ -70,27 +83,58 @@
             <p class="text">I worked with</p>
           </div>
         </div>
+
         <div class="row">
           <div class="skills__container-skillset">
             <div class="skill-container">
-              <div class="skill"></div>
-              <div class="skill-text"></div>
+              <div class="logo">
+                <img class="img-logo" src="./assets/images/logo-node.png" alt="Logo Node">
+              </div>
             </div>
             <div class="skill-container">
-              <div class="skill"></div>
-              <div class="skill-text"></div>
+              <div class="logo">
+                <img class="img-logo" src="./assets/images/logo-angular.svg" alt="Logo Angular">
+              </div>
             </div>
             <div class="skill-container">
-              <div class="skill"></div>
-              <div class="skill-text"></div>
+              <div class="logo">
+                <img class="img-logo" src="./assets/images/logo-firebase.png" alt="Logo Firebase">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="skills__container-skillset">
+            <div class="skill-container">
+              <div class="logo">
+                <img class="img-logo" src="./assets/images/logo-html.png" alt="Logo Html">
+              </div>
             </div>
             <div class="skill-container">
-              <div class="skill"></div>
-              <div class="skill-text"></div>
+              <div class="logo">
+                <img class="img-logo" src="./assets/images/logo-js.png" alt="Logo Js">
+              </div>
             </div>
             <div class="skill-container">
-              <div class="skill"></div>
-              <div class="skill-text"></div>
+              <div class="logo">
+                <img class="img-logo" src="./assets/images/logo-postman.png" alt="Logo Postman">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="skills__container-skillset">
+            <div class="skill-container">
+              <div class="logo">
+                <img class="img-logo" src="./assets/images/logo-sass.png" alt="Logo Sass">
+              </div>
+            </div>
+            <div class="skill-container">
+              <div class="logo">
+                <img class="img-logo" src="./assets/images/logo-webpack.png" alt="Logo Webpack">
+              </div>
             </div>
           </div>
         </div>
@@ -98,8 +142,12 @@
         <div class="row">
           <ul class="list-btn">
             <li>
-              <a href="#second"><button class="btn btn-danger mg-right-1" data-scroll="#second">Previous</button></a>
-              <a href="#fourth"><button class="btn btn-danger" data-scroll="#fourth">Next</button></a>
+              <a href="#second"><button class="button-oval button-prev" data-scroll="#second">
+                <img src="./assets/images/left-arrow.png" class="arrow">
+              </button></a>
+              <a href="#fourth"><button class="button-oval button-next" data-scroll="#fourth">
+                <img src="./assets/images/right-arrow.png" class="arrow">
+              </button></a>
             </li>
           </ul>
         </div>
@@ -111,34 +159,50 @@
         <div class="row">
           <div class="portfolio__container">
             <h2 class="heading">Portfolio</h2>
-            <div class="portfolio__container-example"></div>
-            <div class="portfolio__container-example"></div>
-            <div class="portfolio__container-example"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <ul class="list-btn">
-          <li>
-            <a href="#third"><button class="btn btn-danger mg-right-1" data-scroll="#third">Previous</button></a>
-            <a href="#fifth"><button class="btn btn-danger" data-scroll="#fifth">Next</button></a>
-          </li>
-        </ul>
-      </div>
-    </section>
-  
-    <section class="contact section" id="fifth">
-      <div class="row">
-        <div class="container">
-          <div class="contact__container">
-            <h2 class="heading">Contact</h2>
-            <p class="text">Text 1</p>
-            <div class="contact-button">Send message</div>
-            <div class="contact__container-social">
-              <div class="social-icon"></div>
-              <div class="social-icon"></div>
-              <div class="social-icon"></div>
+            <div class="portfolio__container-examples">
+              <div class="examples">
+                
+                <div class="examples__card card-1 card">
+                  <a href="#">
+                    <div class="examples__card-text">Knowledge</div>
+                    <div class="examples__card-img">
+                      <video class="portfolio-img" muted autoplay loop>
+                        <source src="./assets/images/education.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                  </a>
+                </div>
+                <div class="examples__card card-2 card">
+                  <a href="#">
+                    <div class="examples__card-text">Foundation</div>
+                    <div class="examples__card-img">
+                      <video class="portfolio-img" muted autoplay loop>
+                        <source src="./assets/images/foundation.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                  </a>
+                </div>
+                <div class="examples__card card-3 card">
+                  <a href="#">
+                    <div class="examples__card-text">Workshop</div>
+                    <div class="examples__card-img">
+                      <video class="portfolio-img" muted autoplay loop>
+                        <source src="./assets/images/workshop.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                  </a>
+                </div>
+                <div class="examples__card card-4 card">
+                  <a href="#">
+                    <div class="examples__card-text">Chat App</div>
+                    <div class="examples__card-img">
+                      <video class="portfolio-img" muted autoplay loop>
+                        <source src="./assets/images/chat-app.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -147,7 +211,65 @@
       <div class="row">
         <ul class="list-btn">
           <li>
-            <a href="#fourth"><button class="btn btn-danger mg-right-1" data-scroll="#fourth">Previous</button></a>
+            <a href="#third"><button class="button-oval button-prev" data-scroll="#third">
+              <img src="./assets/images/left-arrow.png" class="arrow">
+            </button></a>
+            <a href="#fifth"><button class="button-oval button-next" data-scroll="#fifth">
+              <img src="./assets/images/right-arrow.png" class="arrow">
+            </button></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  
+    <section class="contact section" id="fifth">
+      <div class="row">
+        <div class="container contact__container">
+          <div class="contact__container-text">
+            <h2 class="heading">Contact</h2>
+            <p class="text">Want to know more? 
+              You are very welcome to send me a message via methods below.</p>
+            <div class="contact-button">Send message</div>
+            <div class="contact__container-text-social">
+              <div class="social-icon">
+                <a href="https://www.facebook.com/jarek.szczepaniak.7">
+                  <img src="./assets/images/icon-fb.svg" alt="fb">
+                </a>
+              </div>
+              <div class="social-icon">
+                <a href="https://github.com/pionkipl">
+                  <img src="./assets/images/icon-github.svg" alt="github">
+                </a>
+              </div>
+              <div class="social-icon">
+                <a href="https://wa.me/48791571174">
+                  <img src="./assets/images/icon-whatsapp.svg" alt="whatsapp">
+                </a>
+              </div>
+              <div class="social-icon">
+                <a href="https://www.linkedin.com/in/jarosław-szczepaniak-028241137/">
+                  <img src="./assets/images/icon-linkedin.svg" alt="linkedin">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="container">
+          <div class="signature-container">
+            <img src="./assets/images/podpis.png" class="img-signature">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <ul class="list-btn">
+          <li>
+            <a href="#fourth"><button class="button-oval button-prev" data-scroll="#fourth">
+              <img src="./assets/images/left-arrow.png" class="arrow">
+            </button></a>
           </li>
         </ul>
       </div>

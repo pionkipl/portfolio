@@ -2,25 +2,59 @@
   font-size: 4rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
+  text-align: center;
+
+  @include media-breakpoint-up (lg) {
+    font-size: 6rem;
+  }
 }
 
 .text {
   font-size: 2rem;
+  text-align: center;
 }
 
 .red {
-  color: red;
+  color: $color-violet;
+  font-weight: 700;
+}
+
+.button-oval {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: none;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+
+  .arrow {
+    width: 50%;
+  }
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .bold {
   font-weight: 700;
 }
+.center {
+  display: flex;
+  justify-content: center;
+}
 
 .typed-cursor {
   font-size: 3rem;
-  color: red;
-}
+  color: $color-violet;
 
+  @include media-breakpoint-up (lg) {
+    font-size: 5rem;
+  }
+}
 
 .section {
   width: 20%;
@@ -28,7 +62,8 @@
   padding: 0 2rem;
   min-height: 100vh;
   position: relative;
-  padding-top: 5rem;
+  padding-top: 2rem;
+  background: linear-gradient($color-main, $color-secondary);
 }
 
 .width-long {
@@ -37,11 +72,20 @@
 
 .list-btn {
   list-style-type: none;
-  position: absolute;
-  bottom: 40px;
-  right: 40px;
   cursor: pointer;
   button {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 }  
+
+.button-next {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+.button-prev {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
