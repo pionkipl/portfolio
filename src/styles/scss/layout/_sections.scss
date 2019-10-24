@@ -139,25 +139,28 @@
           transform: rotateX(-32deg);
           transition: all .5s ease-in-out;
 
-          a {
-            color: black;
-            .examples__card-text {
-              text-align: center;
-              font-size: 2rem;
-              margin-bottom: 1rem;
-              font-weight: 700;
-            }
+          &-text {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+          }
 
-            .examples__card-img {
-              .portfolio-img {
-                width: 100%;
-              }
-            }
-
-            &:hover {
-              text-decoration: none;
+          &-img {
+            .portfolio-img {
+              width: 100%;
             }
           }
+
+          &-check {
+            display: flex;
+            justify-content: center;
+            .check {
+              color: $color-main;
+              font-size: 1.5rem;
+              width: fit-content;
+            }
+          }      
 
           @include media-breakpoint-up (sm) {
             width: 80%;
