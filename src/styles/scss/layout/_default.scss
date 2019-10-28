@@ -104,6 +104,14 @@
   }
 }
 
+.button-up {
+  bottom: 40px;
+
+  @include media-breakpoint-up (md) {
+    bottom: calc(50% - 15px);
+  }
+}
+
 .container__animated {
   height: 100vh;
   position: unset !important;
