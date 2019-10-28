@@ -9,9 +9,14 @@
   }
 }
 
+
 .text {
-  font-size: 2rem;
+  font-size: 1.9rem;
   text-align: center;
+
+  @include media-breakpoint-up (sm) {
+    font-size: 2rem;
+  }
 }
 
 .red {
@@ -73,6 +78,7 @@
 .list-btn {
   list-style-type: none;
   cursor: pointer;
+  z-index: 20;
   button {
     font-size: 3rem;
   }
@@ -82,10 +88,24 @@
   position: absolute;
   right: 20px;
   bottom: 20px;
+
+  @include media-breakpoint-up (md) {
+    bottom: calc(50% - 25px);
+  }
 }
 
 .button-prev {
   position: absolute;
   left: 20px;
   bottom: 20px;
+
+  @include media-breakpoint-up (md) {
+    bottom: calc(50% - 25px);
+  }
 }
+
+.container__animated {
+  height: 100vh;
+  position: unset !important;
+}
+
