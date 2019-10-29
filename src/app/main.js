@@ -21,6 +21,8 @@ if (window.innerHeight < 650 && window.innerWidth > 800) {
   })
 }
 
+// Portfolio animation on click
+
 window.addEventListener('click', (e) => {
   cardExample.forEach(el => {
     if (!el.contains(e.target)) {
@@ -34,6 +36,12 @@ cardExample.forEach(element => {
     element.classList.toggle('card');
   })
 })
+
+// Go to section on load if previously were outside the page
+
+if (performance.navigation.type === 2) {
+  window.location.href = window.location.hash;
+}
 
 
 
