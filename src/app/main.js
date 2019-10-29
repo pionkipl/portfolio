@@ -1,5 +1,12 @@
+import { createDecipher } from "crypto";
+
 const sendBtn = document.querySelector('.contact-button');
 const portfolio = document.querySelectorAll('.examples__card');
+const cardExample = document.querySelectorAll('.examples__card');
+const card = document.querySelectorAll('.card');
+const portfolioSection = document.querySelector('.portfolio');
+
+let opened = false;
 
 sendBtn.addEventListener('click', () => {
   window.open('mailto:jarek491@gmail.com');
@@ -14,5 +21,20 @@ if (window.innerHeight < 650 && window.innerWidth > 800) {
   })
 }
 
+window.addEventListener('click', (e) => {
+  cardExample.forEach(el => {
+    if (!el.contains(e.target)) {
+      el.classList.remove('card');
+    }
+  })
+})
 
-// animate backgorund
+cardExample.forEach(element => {
+  element.addEventListener('click', () => {
+    element.classList.toggle('card');
+  })
+})
+
+
+
+

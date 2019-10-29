@@ -97,18 +97,22 @@
 
     .logo {
       .img-logo {
-        max-width: 80px;
+        width: 80px;
+        height: 80px;
 
         @include media-breakpoint-up (sm) {
-          max-width: 90px;
+          width: 90px;
+          height: 90px;
         }
 
         @include media-breakpoint-up (md) {
-          max-width: 100px;
+          width: 100px;
+          height: 100px;
         }
 
         @include media-breakpoint-up (lg) {
-          max-width: 110px;
+          width: 110px;
+          height: 110px;
         }
       }
     }
@@ -173,11 +177,9 @@
         }
 
         .card {
-          &:hover {
-            transform: rotateX(0);
-            z-index: 10;
-            transform: scale(1.3);
-          }
+          transform: rotateX(0);
+          z-index: 10;
+          transform: scale(1.3);
         }
 
         .card-1 {
